@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Activity:</strong>
+  <%= @idea.activity %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @idea.duration %>
+</p>
+
+<p>
+  <strong>Trip:</strong>
+  <%= @idea.trip %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @idea.country %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @idea.cost %>
+</p>
+
+<%= link_to 'Edit', edit_idea_path(@idea) %> |
+<%= link_to 'Back', ideas_path %>

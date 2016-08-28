@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  activity: MyString
+  duration: 1
+  trip: MyText
+  country: MyString
+  cost: 1
+
+two:
+  activity: MyString
+  duration: 1
+  trip: MyText
+  country: MyString
+  cost: 1
