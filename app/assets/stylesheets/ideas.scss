@@ -1,3 +1,24 @@
 // Place all the styles related to the ideas controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h1{color:blue}
+
+
+
+.title { font-size: 5em;}
+
+
+body{
+
+  background-image: image-url("SkiNZ.jpg");
+  color:blue;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;}
+hl{ font-family: 'Roboto', sans-serif;}
+
+
+
+
+
+
+.btn{color: white; background-color: #42A5F5; text-decoration: none; padding: 1em 2em 1em; margin-bottom: 1.5em; display: inline-block;font-size: inherit}

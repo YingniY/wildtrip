@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>ADVENTURES</h1>
+<h1> "“Not all those who <b>wander</b> are lost.” – J.R.R. Tolkien" </h1>
 
 <table>
   <thead>
@@ -14,7 +14,8 @@
     </tr>
   </thead>
 
-  <tbody>
+
+  <body>
     <% @ideas.each do |idea| %>
       <tr>
         <td><%= idea.activity %></td>
@@ -22,14 +23,15 @@
         <td><%= idea.trip %></td>
         <td><%= idea.country %></td>
         <td><%= idea.cost %></td>
-        <td><%= link_to 'Show', idea %></td>
-        <td><%= link_to 'Edit', edit_idea_path(idea) %></td>
-        <td><%= link_to 'Destroy', idea, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', idea, :class => "btn" %></td>
+        <td><%= link_to 'Edit', edit_idea_path(idea), :class => "btn" %></td>
+        <td><%= link_to 'Destroy', idea, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn" %></td>
       </tr>
     <% end %>
-  </tbody>
+  </body>
 </table>
+
 
 <br>
 
-<%= link_to 'New Idea', new_idea_path %>
+<%= link_to 'New Idea', new_idea_path, :class => "btn" %>
