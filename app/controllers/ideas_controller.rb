@@ -7,6 +7,13 @@ class IdeasController < ApplicationController
     @ideas = Idea.all
   end
 
+  def search
+    @ideas = Idea.where(nil)
+    filtering_params(params).each do |key, value|
+      @ideas = @ideas.public_send(key, value) if value.present?
+    end
+  end
+
   # GET /ideas/1
   # GET /ideas/1.json
   def show
@@ -70,5 +77,10 @@ class IdeasController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def idea_params
       params.require(:idea).permit(:activity, :duration, :trip, :country, :cost)
+    end
+
+    # A list of the param names that can be used for filtering the Product list
+    def filtering_params(params)
+      params.slice(:activity, :duration, :trip, :country, :cost)
     end
 end

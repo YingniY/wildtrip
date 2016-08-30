@@ -8,14 +8,28 @@ body {
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
-  background-image: image-url("SkiNZ.jpg");
+  background-image: image-url("Snowboard.jpg");
+  background-size: cover;
 }
 
 h1 { font-family: 'Raleway', sans-serif;
-font-weight: 400;}
+    font-weight: 400;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+     }
+
+hhome { font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    text-align: left;
+    font-size: 30px;
+     }
 
 p, ol, ul, td {
-  color: #FFF;
+  color: black;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -85,5 +99,5 @@ table {color: #FFF;
 text-align: center;
 margin: 0 auto;}
 
-.field {color: #FFF;
+.field {color: black;
 text-align: center; }
