@@ -7,7 +7,9 @@ class IdeasController < ApplicationController
     @ideas = Idea.all
   end
 
-  def search
+
+
+def search
     @ideas = Idea.where(nil)
     filtering_params(params).each do |key, value|
       @ideas = @ideas.public_send(key, value) if value.present?
