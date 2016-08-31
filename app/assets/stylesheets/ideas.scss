@@ -22,7 +22,18 @@ hl{ font-family: 'Roboto', sans-serif;}
 
 
 .btn{color: white;
-  background-color: #42A5F5;
+  background-color: #9E9E9E;
+  text-decoration: none;
+  padding: 1em 2em 1em;
+  margin-bottom: 1.5em;
+  display: inline-block;
+  font-size: inherit;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  border-radius: 8px;
+}
+
+.btn2{color: white;
+  background-color: rgba(255,255,255,0.5);
   text-decoration: none;
   padding: 1em 2em 1em;
   margin-bottom: 1.5em;

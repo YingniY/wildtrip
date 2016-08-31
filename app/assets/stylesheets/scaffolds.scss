@@ -24,7 +24,7 @@ hhome { font-family: 'Raleway', sans-serif;
     padding-top: 50px;
     padding-right: 30px;
     padding-bottom: 30px;
-    text-align: left;
+    text-align: center;
     font-size: 30px;
      }
 
@@ -95,9 +95,13 @@ div {
   }
 }
 
-table {color: #FFF;
+table {color: #607D8B;
 text-align: center;
-margin: 0 auto;}
+margin: 0 auto;
+background-color: #FFF;
+vertical-align: top;
+background:rgba(100,100,100,0.5);
+}
 
 .field {color: black;
 text-align: center; }
