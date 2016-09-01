@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   root 'home#index'
   get 'ideas/search' => 'ideas#search'
   resources :ideas
+  get 'signup' => 'users#new'
+  resources :users
   get '/random_background.jpg', to: 'background#image'
 
   # The priority is based upon order of creation: first created -> highest priority.
