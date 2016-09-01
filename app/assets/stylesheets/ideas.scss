@@ -1,23 +1,70 @@
 // Place all the styles related to the ideas controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-h1{color:blue}
+h1{color:black}
 
 
 
 .title { font-size: 5em;}
 
 
-body{
 
-  background-image: image-url("Snowboard.jpg");
+body{
+  background-image: image-url("background_3.jpg");
   color:black;
   text-align: center;
-  font-family: 'Raleway', sans-serif;}
+  font-family: 'Raleway', sans-serif;
+  background-size: cover;
+}
 hl{ font-family: 'Roboto', sans-serif;}
 
 
 
+.dropbtn {
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  padding: 1em 2em 1em;
+  margin-bottom: 1.5em;
+  display: inline-block;
+  font-size: inherit;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  border-radius: 8px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: black;
+color:white;
+}
 
 
 
@@ -32,7 +79,7 @@ hl{ font-family: 'Roboto', sans-serif;}
   border-radius: 8px;
 }
 
-.btn2{color: white;
+.btn2{color: black;
   background-color: rgba(255,255,255,0.5);
   text-decoration: none;
   padding: 1em 2em 1em;
@@ -41,4 +88,127 @@ hl{ font-family: 'Roboto', sans-serif;}
   font-size: inherit;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   border-radius: 8px;
+}
+
+
+
+@import 'https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto';
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  /*background-image: image-url("background_3.jpg"); */
+  background-size: cover;
+}
+
+h1 { font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+     }
+
+hhome { font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+     }
+
+p, ol, ul, td {
+  color: black;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: #000;
+
+  &:visited {
+    color: #666;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
+
+table {color: #607D8B;
+text-align: center;
+margin: 0 auto;
+background-color: #FFF;
+vertical-align: top;
+background:rgba(100,100,100,0.5);
+}
+
+.field {color: black;
+text-align: center; }
+
+newidea {
+  /*background-image: image-url("background_3.jpg"); */
+  color:black;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+th{
+  color: black;
+  font-size: 18px;
+  background-color: white;
 }
