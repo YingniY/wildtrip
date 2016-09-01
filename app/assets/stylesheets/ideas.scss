@@ -1,7 +1,8 @@
 // Place all the styles related to the ideas controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-h1{color:#424242}
+h1{color:#424242;
+}
 
 h2{
   color:#212121;
@@ -20,8 +21,9 @@ h3{color:black;
 
 
 
+.play::before,
 body{
-  background-image: image-url("background_3.jpg");
+  background-image: image-url("Snowboard.jpg");
   color:black;
   text-align: center;
   font-family: 'Raleway', sans-serif;
@@ -103,18 +105,12 @@ color:white;
 
 
 
-@import 'https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto';
+/* @import 'https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto';  */
 
-body {
-  background-color: #fff;
-  color: #333;
-  font-family: 'Raleway', sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  font-weight: 400;
-  /*background-image: image-url("background_3.jpg"); */
-  background-size: cover;
-}
+
+@import 'https://fonts.googleapis.com/css?family=Kalam:700|Permanent+Marker|Raleway|Roboto';
+
+
 
 h1 { font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -207,8 +203,13 @@ vertical-align: top;
 background:rgba(100,100,100,0.5);
 }
 
-.field {color: black;
-text-align: center; }
+.field {
+  color: black;
+text-align: center;
+font-size: 18px;
+  font-weight: bold;
+
+}
 
 newidea {
   /*background-image: image-url("background_3.jpg"); */
@@ -222,4 +223,81 @@ th{
   color: black;
   font-size: 18px;
   background-color: white;
+}
+
+.input{
+  color: white;
+  background-color: #FFF;
+  text-decoration: none;
+  padding: 1em 2em 1em;
+  margin-bottom: 1.5em;
+  display: inline-block;
+  font-size: inherit;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  border-radius: 8px;
+}
+
+.play::after,
+.newidea {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: image-url("background_0.jpg");
+  background-size: cover;
+}
+
+
+.play::after,
+.main {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: image-url("background_1.jpg");
+  background-size: cover;
+}
+
+
+.play::after,
+.sign{
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: image-url("background_2.jpg");
+  background-size: cover;
+}
+
+.play::after,
+.land{
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: image-url("background_3.jpg");
+  background-size: cover;
+}
+
+label{
+    color: black;
+text-align: center;
+font-size: 18px;
+  font-weight: bold;
 }
