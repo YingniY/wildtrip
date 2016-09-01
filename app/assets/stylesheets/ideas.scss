@@ -128,12 +128,22 @@ hhome { font-family: 'Raleway', sans-serif;
     font-size: 30px;
      }
 
-p, ol, ul, td {
+p, ol, ul {
   color: black;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
+
+td {
+  color: white;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  vertical-align: top;
+}
+
+
 
 pre {
   background-color: #eee;
@@ -195,12 +205,12 @@ div {
   }
 }
 
-table {color: #607D8B;
+table {color: white;
 text-align: center;
 margin: 0 auto;
 background-color: #FFF;
 vertical-align: top;
-background:rgba(100,100,100,0.5);
+background:rgba(100,100,100,0.90);
 }
 
 .field {
