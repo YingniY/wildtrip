@@ -8,19 +8,23 @@
 <div class="dropdown">
   <button class="dropbtn"> by activity</button>
   <div class="dropdown-content">
-    <a href= "ideas?search=snow" > Snow </a>
-    <a href= "ideas?search=cycle" > Cycle </a>
-    <a href= "ideas?search=dive" > Dive </a>
+    <a href= "search?activity=Cycle" > Cycle </a>
+    <a href= "search?activity=Snow" > Snow </a>
+    <a href= "search?activity=Dive" > Dive </a>
+    <a href= "search?activity=Roadtrip" > Roadtrip </a>
+    
   </div>
 </div>
 
 <div class="dropdown">
   <button class="dropbtn"> by country</button>
   <div class="dropdown-content">
-    <a href= "ideas?search=Australia" > Australia </a>
-    <a href= "ideas?search=Japan" > Japan </a>
-    <a href= "ideas?search=Korea" > Korea</a>
-    <a href= "ideas?search=Philippines" > Philippines</a>
+    <a href= "search?country=Australia" > Australia </a>
+    <a href= "search?country=Indonesia" > Indonesia</a>
+    <a href= "search?country=Japan" > Japan </a>
+    <a href= "search?country=Korea" > Korea</a>
+    <a href= "search?country=Philippines" > Philippines</a>
+    
   </div>
 </div>
 <%= link_to 'New Idea', new_idea_path, :class => "btn" %>
