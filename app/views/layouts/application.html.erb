@@ -8,6 +8,23 @@
 </head>
 <body>
 
+  <% if current_user %>
+  <ul>
+    <li><%= current_user.email %></li>
+    <li><%= link_to 'Log out', logout_path, method: "delete", :class => "btn2" %></li>
+    <% else %>
+    <ul>
+      <li><%= link_to "Login", 'login', :class => "btn2" %></a></li>
+  <li><%= link_to 'Signup', 'signup', :class => "btn2" %></a></li>
+</ul>
+<% end %>
+
+
+
+
+
+
+
 <%= yield %>
 
 </body>
