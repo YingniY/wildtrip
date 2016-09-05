@@ -2,17 +2,17 @@
 
 <h1> Wanderlust List </h1>
 
-
 <%= link_to 'All', ideas_path, :class => "btn"  %>
 
 <div class="dropdown">
   <button class="dropbtn"> by activity</button>
   <div class="dropdown-content">
-    <a href= "search?activity=Cycle" > Cycle </a>
-    <a href= "search?activity=Snow" > Snow </a>
+     <a href= "search?activity=Cycle" > Cycle </a>
     <a href= "search?activity=Dive" > Dive </a>
+    <a href= "search?activity=Snow" > Snow </a>
     <a href= "search?activity=Roadtrip" > Roadtrip </a>
-    
+    <a href= "search?activity=Trek" > Trek </a>
+
   </div>
 </div>
 
@@ -20,11 +20,14 @@
   <button class="dropbtn"> by country</button>
   <div class="dropdown-content">
     <a href= "search?country=Australia" > Australia </a>
-    <a href= "search?country=Indonesia" > Indonesia</a>
+    <a href= "search?country=New Zealand" > New Zealand</a>
     <a href= "search?country=Japan" > Japan </a>
     <a href= "search?country=Korea" > Korea</a>
+    <a href= "search?country=Indonesia" > Indonesia</a>
+    <a href= "search?country=Malaysia" > Malaysia</a>
     <a href= "search?country=Philippines" > Philippines</a>
-    
+
+
   </div>
 </div>
 <%= link_to 'New Idea', new_idea_path, :class => "btn" %>
@@ -58,6 +61,8 @@
         <td><%= link_to 'Remove', idea, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn2" %></td>
       </tr>
     <% end %>
+
+
   </body>
 </table>
 
